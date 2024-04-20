@@ -1,0 +1,19 @@
+.fotografias {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+}
+
+.fotografias-categorias {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+}
+
+.fotografias-frames {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}

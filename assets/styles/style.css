@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* cores */
+    --principal: #000000;
+    --textos: #ffffff;
+    --laranja-1: #915601;
+    --laranja-2: #F29002;
+
+     /* fontes */
+     --fonte-primaria: font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    height: 100vh;
+    background: var(--principal);
+    color: var(--textos);
+}
+
+/* Header */
+
+.menu {
+    border-bottom: 2px groove var(--laranja-1);
+}
+
+.menu-lista {
+    margin: 1rem 15rem;
+}
+
+
+.menu_item a{
+    padding: .5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu_item a:hover {
+    color: var(--laranja-2);
+    border: 1px groove;
+    border-color: var(--laranja-2);
+    border-radius: 2px;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 40px 100px;
+    width: 100%;
+    cursor: pointer;
+}
+
+a {
+    color: var(--textos);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 2rem;
+}
+
+/* Home Fotografias Trabalhos entregues */
+
+.trabalhos-imagens {
+    margin: 4rem 15rem;
+}
+
+.trabalhos_img {
+    padding: .5rem;
+}
+
+.trabalhos-linha_1 {
+    margin: 4rem 0 1rem 0;
+}
+
+.trabalhos-linha_2 {
+    margin: 2rem 0;
+}
+
+.imagens-título_1 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.imagens-título_2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 2rem 0;
+}
+
+/* Home descrição dos trabalhos */
+
+.trabalhos-descrição {
+    margin: 4rem 15rem;
+}
+
+.trabalhos-descrição_texto {
+    padding-bottom: 4rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.descrição_título {
+    padding: 2rem 0;
+    font-size: 22px;
+    font-weight: 600;   
+}
+
+.descrição_texto {
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.descrição_lista {
+    border: 2px solid var(--laranja-1);
+    border-radius: .5rem;
+    padding: 0 2rem;
+    width: 226px;
+    height: 300px;
+}
+
+/* Home comentário dos clientes */
+
+.comentários {
+    margin: 5rem 15rem;
+}
+
+.comentários-título {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 4rem 0; 
+}
+
+.comentários-lista {
+    background: var(--laranja-2);
+    width: 300;
+    height: 250;
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+}
+
+.comentários-lista_add {
+    align-self: center;
+}
+
+.comentários-lista_titulo {
+    padding-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.comentários-lista_texto {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.comentários-lista_data {
+    padding-top: .75rem;
+    font-size: 12px;
+}
+
+/* Home Footer */
+
+.contato-linha_1 {
+    margin: 2rem 14rem 0 14rem;
+    width: 1000px;
+}
+
+.contato-info {
+    padding-bottom: 4rem;
+}
+
+.contato {
+    margin: 0 15rem;
+}
+
+.contato-título {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 2rem 0; 
+}
+
+.info-dados_título, .info-dados_texto {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.redes-sociais {
+    padding-bottom: 2rem;
+}
+
+.contato-linha_3 {
+    padding-bottom: 2rem;
+}
+
+.créditos {
+    padding-bottom: 2rem;
+}
+
+/* Orçamento */
+
+.apresentacao__formulario {
+    margin: 8rem 25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.apresentacao__titulo-formulario {
+    margin-top: 1rem;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__titulo2 {
+    margin-top: 2rem;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.formulario-paragrafo {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    margin-bottom: .5rem;
+}
+
+.text_input, .email_input, .mensagem_input {
+    margin-bottom: .5rem;
+}
+
+.text_input,
+.email_input {
+    padding: 0 .5rem;
+    height: 3em;
+    width: 700px;
+    border-radius: 6px;
+    border: var(--cor-secundaria);
+}
+
+.mensagem_input {
+    padding: .5rem .5rem;
+    height: 10em;
+    width: 700px;
+    border-radius: 6px;
+    border: var(--cor-secundaria);
+}
+
+.formulario-botao_enviar {
+    width: 8rem;
+    height: 2.8em;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 6px;
+    background-color: #5F5F79;
+    color: var(--cor-secundaria);
+}
+
+.formulario-botao_enviar:hover {
+    background-color: var(--laranja-2);
+    border: 2px solid #ffffff;
+}
+
+/* Sobre Nós */
+
+.sobre_nós-descrição {
+    margin: 4rem 15rem;
+}
+
+.sobre_nós-descrição-texto {
+    padding-bottom: 4rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sobre_nós-título {
+    padding: 2rem 0;
+    font-size: 22px;
+    font-weight: 600;   
+}
+
+.sobre_nós-texto {
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sobre_nós-lista {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--laranja-1);
+    border-radius: .5rem;
+    padding: 1rem 1rem;
+    width: 316px;
+    height: 410px;
+}
+

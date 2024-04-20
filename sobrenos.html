@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/flex.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li>
+                    <h1 class="logo"></h1>
+                </li>
+                <li class="menu_item"><a href="index.html">Home</a></li>
+                <li class="menu_item"><a href="fotografias.html">Fotografias</a></li>
+                <li class="menu_item"><a href="filmes.html">Nossos Filmes</a></li>
+                <li class="menu_item"><a href="orcamento.html">Orçamento</a></li>
+                <li class="menu_item"><a href="sobrenos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="trabalhos-imagens">
+            <h1 class="imagens-título_1">Sobre Nós</h1>
+            <p class="sobre_nós-descrição-texto">
+                Somos uma equipe de fotógrafos apaixonados pela arte de capturar momentos.
+                 Com anos de experiência e um olhar criativo, nossa missão é contar histórias 
+                 através das nossas lentes e eternizar os momentos mais especiais da vida das pessoas.
+            </p>
+        </section>
+
+        <section class="sobre_nós-descrição">
+            
+                <ul class="sobre_nós-descrição-lista">
+                    <li class="sobre_nós-lista">
+                        <img class="sobre_nós-img" src="./assets/img-sobre-nos/Set-up1.png" alt="imagem um set up">
+                        <h3 class="sobre_nós-título">Tecnologia de ponta</h3>
+                        <p class="sobre_nós-texto">Utilizamos equipamentos de última geração para garantir o mais alto 
+                            padrão de qualidade em nossas imagens.
+                        </p>
+                    </li>
+                    <li class="sobre_nós-lista">
+                        <img class="sobre_nós-img" src="./assets/img-sobre-nos/Photographer2.png" alt="imagem um fotografo">
+                        <h3 class="sobre_nós-título">Edição profissional</h3>
+                        <p class="sobre_nós-texto">Nossa equipe de editores altamente qualificados aprimora cada imagem
+                             para garantir resultados incríveis.
+                        </p>
+                    </li>
+                    <li class="sobre_nós-lista">
+                        <img class="sobre_nós-img" src="./assets/img-sobre-nos/Woman-sitting3.png" alt="imagem de uma mulher sentada">
+                        <h3 class="sobre_nós-título">Clientes satisfeitos</h3>
+                        <p class="sobre_nós-texto">A satisfação dos nossos clientes é a nossa prioridade. Trabalhamos duro para proporcionar
+                             uma experiência fotográfica excepcional.
+                        </p>
+                    </li>
+                </ul>
+
+        </section>
+
+        <section class="apresentacao__formulario">
+            <form action="https://formsubmit.co/roseaneborges@alabuta.com" method="POST">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+                <h3 class="apresentacao__titulo2">Conta como foi sua experiência com a gente</h3>
+    
+                <div class="formulario__label">
+                    <p class="formulario-paragrafo">Nome</p>
+                    <input class="formulario-nome text_input" type="text" name="name" placeholder="Nome" required>
+                </div>
+    
+                <div class="formulario__label">
+                    <p class="formulario-paragrafo">E-mail</p>
+                    <input class="formulario-email email_input" type="email" name="email" placeholder="E-mail" required>
+                </div>
+    
+                <div class="formulario__label">
+                    <p class="formulario-paragrafo">Mensagem</p>
+                    <textarea class="formulario-mensagem mensagem_input" name="message" placeholder="Sua mensagem"
+                        required></textarea>
+                </div>
+    
+                <button class="formulario-botao_enviar" type="submit">Enviar</button>
+                
+            </form>
+        </section>
+    
+        
+    </main>
+
+    <footer class="rodapé">
+        <img class="contato-linha_1" src="./assets/svg/Line-home.svg" alt="Linha de cor laranja">
+        <section class="contato">
+            <h1 class="contato-título">Contato</h1>
+            <ul class="contato-info">
+                <li class="contato-info_dados">
+                    <p class="info-dados_título">Telefone</p>
+                    <p class="info-dados_texto">+55 123 456 7890</p>
+                </li>
+                <li class="contato-info_dados">
+                    <p class="info-dados_título">Endereço</p>
+                    <p class="info-dados_texto">Rua das Fotos, 123, Cidade da Fotografia, Brasil</p>
+                </li>
+                <li class="contato-info_dados">
+                    <p class="info-dados_título">E-mail</p>
+                    <p class="info-dados_texto">contato@fotografia.com.br</p>
+                </li>
+            </ul>
+        </section>
+        <div class="redes-sociais">
+            <img class="redes-sociais_img" src="./assets/img/Tiktok.png" alt="logo do Tiktok">
+            <img class="redes-sociais_img" src="./assets/img/Instagram.png" alt="logo do Instagram">
+        </div>
+        <img class="contato-linha_3" src="./assets/svg/Line-home.svg" alt="Linha de cor laranja">
+        <small class="créditos">Desenvolvido por Rose</small>
+    </footer>
+
+</body>
+
+</html>
